@@ -1,0 +1,772 @@
+{
+  "theme": "dark",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "PPTX Maker",
+      "subtitle": "AI エージェントによる\nプレゼンテーション自動生成",
+      "department": "Solutions Architecture",
+      "date": "2026年2月"
+    },
+    {
+      "layout": "agenda",
+      "title": "アジェンダ",
+      "items": [
+        "PPTX Maker とは",
+        "主な機能",
+        "アーキテクチャ図の例",
+        "デザインパターン"
+      ]
+    },
+    {
+      "layout": "section",
+      "title": "PPTX Maker とは"
+    },
+    {
+      "layout": "content",
+      "title": "",
+      "elements": [
+        {
+          "type": "image",
+          "src": "icons:Kiro",
+          "x": 134,
+          "y": 281,
+          "width": 230,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 518,
+          "width": 768,
+          "line": "none",
+          "fontSize": 42,
+          "text": "{{bold:PPTX Maker}}",
+          "textGradient": {
+            "angle": 0,
+            "stops": [
+              {
+                "position": 0,
+                "color": "#FF9900"
+              },
+              {
+                "position": 1,
+                "color": "#FFCC00"
+              }
+            ]
+          }
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 670,
+          "width": 768,
+          "line": "none",
+          "fontSize": 16,
+          "text": "JSON を入力するだけで、社内テンプレートに準拠した\n高品質なプレゼンテーションを自動生成"
+        },
+        {
+          "type": "line",
+          "x": 941,
+          "y": 238,
+          "width": 0,
+          "height": 648,
+          "color": "#5A6B7D",
+          "lineWidth": 1.5
+        },
+        {
+          "type": "textbox",
+          "x": 1037,
+          "y": 259,
+          "width": 826,
+          "line": "none",
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} ブランドガイドライン準拠"
+        },
+        {
+          "type": "textbox",
+          "x": 1037,
+          "y": 389,
+          "width": 826,
+          "line": "none",
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} AWS アイコン 2,000+ 種類"
+        },
+        {
+          "type": "textbox",
+          "x": 1037,
+          "y": 518,
+          "width": 826,
+          "line": "none",
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} Light / Dark テーマ対応"
+        },
+        {
+          "type": "textbox",
+          "x": 1037,
+          "y": 648,
+          "width": 826,
+          "line": "none",
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} グラデーション・スタイル付きテキスト"
+        },
+        {
+          "type": "textbox",
+          "x": 1037,
+          "y": 778,
+          "width": 826,
+          "line": "none",
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} プレビュー画像生成"
+        }
+      ]
+    },
+    {
+      "layout": "section",
+      "title": "主な機能"
+    },
+    {
+      "layout": "title_only",
+      "title": "主な機能",
+      "elements": [
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 58,
+          "y": 194,
+          "width": 576,
+          "height": 389,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.08
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:source_code_dark",
+          "x": 269,
+          "y": 216,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 58,
+          "y": 389,
+          "width": 576,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#FF9900:JSON → PPTX}}"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 475,
+          "width": 499,
+          "align": "center",
+          "fontSize": 12,
+          "text": "シンプルな JSON 定義から\n高品質なスライドを生成"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 672,
+          "y": 194,
+          "width": 576,
+          "height": 389,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.08
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-QuickSight_48",
+          "x": 883,
+          "y": 216,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 672,
+          "y": 389,
+          "width": 576,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#41B3FF:プレビュー生成}}"
+        },
+        {
+          "type": "textbox",
+          "x": 710,
+          "y": 475,
+          "width": 499,
+          "align": "center",
+          "fontSize": 12,
+          "text": "PNG 画像でプレビュー\n5% グリッド表示で位置調整"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 1286,
+          "y": 194,
+          "width": 576,
+          "height": 389,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.08
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-Bedrock_48",
+          "x": 1498,
+          "y": 216,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 1286,
+          "y": 389,
+          "width": 576,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#AD5CFF:アイコン検索}}"
+        },
+        {
+          "type": "textbox",
+          "x": 1325,
+          "y": 475,
+          "width": 499,
+          "align": "center",
+          "fontSize": 12,
+          "text": "2,000+ の AWS アイコンを\nキーワードで即座に検索"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 365,
+          "y": 626,
+          "width": 576,
+          "height": 324,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.08
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:toolkit_dark",
+          "x": 576,
+          "y": 648,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 365,
+          "y": 799,
+          "width": 576,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#00E500:PPTX → JSON}}"
+        },
+        {
+          "type": "textbox",
+          "x": 403,
+          "y": 886,
+          "width": 499,
+          "align": "center",
+          "fontSize": 12,
+          "text": "既存スライドを JSON に変換\nテンプレートとして再利用"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 979,
+          "y": 626,
+          "width": 576,
+          "height": 324,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.08
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch-Category_Developer-Tools_48",
+          "x": 1190,
+          "y": 648,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 979,
+          "y": 799,
+          "width": 576,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#FF5C85:デザインパターン}}"
+        },
+        {
+          "type": "textbox",
+          "x": 1018,
+          "y": 886,
+          "width": 499,
+          "align": "center",
+          "fontSize": 12,
+          "text": "実績あるレイアウトを\nすぐに参照・適用"
+        }
+      ]
+    },
+    {
+      "layout": "section",
+      "title": "アーキテクチャ図の例"
+    },
+    {
+      "layout": "title_only",
+      "title": "サーバーレス Web アプリケーション",
+      "elements": [
+        {
+          "type": "textbox",
+          "x": 58,
+          "y": 194,
+          "width": 288,
+          "align": "center",
+          "fontSize": 14,
+          "text": "{{#8FA7C4:ユーザー}}"
+        },
+        {
+          "type": "image",
+          "src": "icons:user_dark",
+          "x": 134,
+          "y": 281,
+          "width": 115,
+          "labelPosition": "none"
+        },
+        {
+          "type": "line",
+          "x": 307,
+          "y": 346,
+          "width": 192,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 538,
+          "y": 194,
+          "width": 845,
+          "height": 594,
+          "fill": "none",
+          "line": "#5A6B7D",
+          "lineWidth": 1
+        },
+        {
+          "type": "textbox",
+          "x": 557,
+          "y": 205,
+          "width": 384,
+          "fontSize": 12,
+          "text": "{{#8FA7C4:AWS Cloud}}"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-CloudFront_48",
+          "x": 614,
+          "y": 302,
+          "width": 134,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 557,
+          "y": 454,
+          "width": 250,
+          "align": "center",
+          "fontSize": 11,
+          "text": "CloudFront"
+        },
+        {
+          "type": "line",
+          "x": 806,
+          "y": 346,
+          "width": 154,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-API-Gateway_48",
+          "x": 998,
+          "y": 302,
+          "width": 134,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 941,
+          "y": 454,
+          "width": 250,
+          "align": "center",
+          "fontSize": 11,
+          "text": "API Gateway"
+        },
+        {
+          "type": "line",
+          "x": 1190,
+          "y": 346,
+          "width": 154,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 1382,
+          "y": 238,
+          "width": 461,
+          "height": 497,
+          "fill": "none",
+          "line": "#FF9900",
+          "lineWidth": 2
+        },
+        {
+          "type": "textbox",
+          "x": 1402,
+          "y": 248,
+          "width": 422,
+          "fontSize": 11,
+          "text": "{{#FF9900:Compute}}"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_AWS-Lambda_48",
+          "x": 1536,
+          "y": 302,
+          "width": 134,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 1459,
+          "y": 454,
+          "width": 307,
+          "align": "center",
+          "fontSize": 11,
+          "text": "Lambda"
+        },
+        {
+          "type": "line",
+          "x": 1613,
+          "y": 454,
+          "width": 0,
+          "height": 130,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-DynamoDB_48",
+          "x": 1536,
+          "y": 583,
+          "width": 134,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 1459,
+          "y": 734,
+          "width": 307,
+          "align": "center",
+          "fontSize": 11,
+          "text": "DynamoDB"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-Cognito_48",
+          "x": 614,
+          "y": 583,
+          "width": 134,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 557,
+          "y": 734,
+          "width": 250,
+          "align": "center",
+          "fontSize": 11,
+          "text": "Cognito"
+        },
+        {
+          "type": "line",
+          "x": 806,
+          "y": 626,
+          "width": 154,
+          "height": 0,
+          "connectorType": "elbow",
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "line",
+          "x": 960,
+          "y": 454,
+          "width": 0,
+          "height": 173,
+          "connectorType": "straight"
+        },
+        {
+          "type": "textbox",
+          "x": 58,
+          "y": 842,
+          "width": 1805,
+          "align": "left",
+          "fontSize": 14,
+          "text": "{{#8FA7C4:CloudFront で静的コンテンツを配信、API Gateway + Lambda でバックエンド処理、Cognito で認証}}"
+        }
+      ]
+    },
+    {
+      "layout": "section",
+      "title": "デザインパターン"
+    },
+    {
+      "layout": "title_only",
+      "title": "生成 AI に独自の知識を取り込む方法",
+      "elements": [
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 58,
+          "y": 173,
+          "width": 422,
+          "height": 648,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:gear_dark",
+          "x": 192,
+          "y": 205,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 58,
+          "y": 367,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#0072E5:プロンプト}}\n{{bold,#0072E5:エンジニアリング}}"
+        },
+        {
+          "type": "textbox",
+          "x": 77,
+          "y": 518,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "生成 AI へのプロンプトに直\n接知識を取り込む\n\n外部の知識ベースの\n準備はいらない\n\n基盤モデルは変更しない"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 518,
+          "y": 173,
+          "width": 422,
+          "height": 648,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-OpenSearch-Service_48",
+          "x": 653,
+          "y": 205,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 518,
+          "y": 367,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#C300E0:RAG}}\n{{bold,#C300E0:(検索拡張生成)}}"
+        },
+        {
+          "type": "textbox",
+          "x": 538,
+          "y": 518,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "{{#C300E0:外部の知識ベース}}から\n取得したコンテンツを\n{{#C300E0:プロンプトに補完}}して\n知識を与える\n\n基盤モデルは変更しない"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 979,
+          "y": 173,
+          "width": 422,
+          "height": 648,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Res_Amazon-SageMaker_Model_48",
+          "x": 1114,
+          "y": 205,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 979,
+          "y": 367,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#E000A0:ファイン}}\n{{bold,#E000A0:チューニング}}"
+        },
+        {
+          "type": "textbox",
+          "x": 998,
+          "y": 518,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "特定のタスクに対して特化\nした能力を得る\n\n少量のラベル付き\nサンプルで学習\n\n{{#E000A0:基盤モデルのコピーに対し}}\n{{#E000A0:て変更を加える}}"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 1440,
+          "y": 173,
+          "width": 422,
+          "height": 648,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-Bedrock_48",
+          "x": 1574,
+          "y": 205,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 1440,
+          "y": 367,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#00E500:独自モデル}}\n{{bold,#00E500:の開発}}"
+        },
+        {
+          "type": "textbox",
+          "x": 1459,
+          "y": 518,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "大量のトレーニング\nデータによる一般知識や専門\n知識の獲得\n\nゼロから新しいモデルを開発"
+        },
+        {
+          "type": "textbox",
+          "x": 38,
+          "y": 864,
+          "width": 269,
+          "align": "center",
+          "fontSize": 16,
+          "text": "{{bold,#0072E5:EASIER}}"
+        },
+        {
+          "type": "line",
+          "x": 307,
+          "y": 886,
+          "width": 1306,
+          "height": 0,
+          "lineWidth": 1.5,
+          "dashStyle": "dash",
+          "lineGradient": {
+            "angle": 0,
+            "stops": [
+              {
+                "position": 0,
+                "color": "#0072E5"
+              },
+              {
+                "position": 0.5,
+                "color": "#C300E0"
+              },
+              {
+                "position": 1,
+                "color": "#00E500"
+              }
+            ]
+          },
+          "headEnd": "arrow",
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "x": 768,
+          "y": 853,
+          "width": 384,
+          "height": 54,
+          "fill": "#000000",
+          "line": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 768,
+          "y": 864,
+          "width": 384,
+          "align": "center",
+          "fontSize": 12,
+          "text": "A D O P T I O N"
+        },
+        {
+          "type": "textbox",
+          "x": 1613,
+          "y": 864,
+          "width": 269,
+          "align": "center",
+          "fontSize": 16,
+          "text": "{{bold,#00E500:COMPLEX}}"
+        }
+      ]
+    },
+    {
+      "layout": "thankyou"
+    }
+  ]
+}

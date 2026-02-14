@@ -1,0 +1,230 @@
+{
+  "theme": "dark",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Component Catalog",
+      "subtitle": "プリミティブ部品ショーケース",
+      "date": "2026年2月"
+    },
+    {
+      "layout": "content",
+      "title": "Containers",
+      "elements": [
+        {"type": "textbox", "x": 58, "y": 180, "width": 400, "fontSize": 14, "text": "{{bold,#FF9900:frame}} — 基本枠"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 220, "width": 400, "height": 180, "adjustments": [0.05], "line": "#8FA7C4", "lineWidth": 1.5},
+        {"type": "textbox", "x": 78, "y": 300, "width": 360, "fontSize": 12, "text": "{{#8FA7C4:枠線のみ（デフォルト）}}"},
+
+        {"type": "textbox", "x": 490, "y": 180, "width": 400, "fontSize": 14, "text": "{{bold,#FF9900:frame}} — fill背景"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 490, "y": 220, "width": 400, "height": 180, "adjustments": [0.05], "fill": "#FFFFFF", "opacity": 0.08, "line": "none"},
+        {"type": "textbox", "x": 510, "y": 300, "width": 360, "fontSize": 12, "text": "{{#8FA7C4:半透明fill（opacity: 0.08）}}"},
+
+        {"type": "textbox", "x": 920, "y": 180, "width": 400, "fontSize": 14, "text": "{{bold,#FF9900:frame}} — アクセントボーダー"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 920, "y": 220, "width": 400, "height": 180, "adjustments": [0.05], "line": "#8FA7C4", "lineWidth": 1.5},
+        {"type": "shape", "shape": "rectangle", "x": 920, "y": 220, "width": 4, "height": 180, "fill": "#FF9900", "line": "none"},
+        {"type": "textbox", "x": 940, "y": 300, "width": 360, "fontSize": 12, "text": "{{#8FA7C4:左辺アクセント}}"},
+
+        {"type": "textbox", "x": 1370, "y": 180, "width": 490, "fontSize": 14, "text": "{{bold,#FF9900:frame}} — 破線枠"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 1370, "y": 220, "width": 490, "height": 180, "adjustments": [0.05], "line": "#8FA7C4", "lineWidth": 1.5, "dashStyle": "dash"},
+        {"type": "textbox", "x": 1390, "y": 300, "width": 430, "fontSize": 12, "text": "{{#8FA7C4:破線（未確定エリア表現）}}"},
+
+        {"type": "textbox", "x": 58, "y": 440, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:section-header-bar}} — 基本"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 480, "width": 860, "height": 60, "fill": "#FFFFFF", "opacity": 0.15, "line": "none", "adjustments": [0.35]},
+        {"type": "textbox", "x": 77, "y": 488, "width": 500, "height": 48, "fontSize": 16, "verticalAnchor": 1, "marginLeft": 0, "marginTop": 0, "marginBottom": 0, "text": "{{bold:セクション見出し}}"},
+
+        {"type": "textbox", "x": 960, "y": 440, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:section-header-bar}} — アクセント付き"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 960, "y": 480, "width": 900, "height": 60, "fill": "#FFFFFF", "opacity": 0.15, "line": "none", "adjustments": [0.35]},
+        {"type": "shape", "shape": "rectangle", "x": 960, "y": 480, "width": 4, "height": 60, "fill": "#FF9900", "line": "none"},
+        {"type": "textbox", "x": 979, "y": 488, "width": 500, "height": 48, "fontSize": 16, "verticalAnchor": 1, "marginLeft": 0, "marginTop": 0, "marginBottom": 0, "text": "{{bold:アクセント付き見出し}}"}
+      ]
+    },
+    {
+      "layout": "content",
+      "title": "Connectors",
+      "elements": [
+        {"type": "textbox", "x": 58, "y": 180, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:flow-step}} — 矢印接続フロー"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 230, "width": 340, "height": 100, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.15], "text": "{{bold:Step 1}}\n{{14pt,#8FA7C4:計画}}", "textAlign": "center", "verticalAnchor": 3},
+        {"type": "line", "x": 398, "y": 278, "width": 100, "height": 0, "color": "#FF9900", "lineWidth": 1.5, "tailEnd": "arrow"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 498, "y": 230, "width": 340, "height": 100, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.15], "text": "{{bold:Step 2}}\n{{14pt,#8FA7C4:実装}}", "textAlign": "center", "verticalAnchor": 3},
+        {"type": "line", "x": 838, "y": 278, "width": 100, "height": 0, "color": "#FF9900", "lineWidth": 1.5, "tailEnd": "arrow"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 938, "y": 230, "width": 340, "height": 100, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.15], "text": "{{bold:Step 3}}\n{{14pt,#8FA7C4:検証}}", "textAlign": "center", "verticalAnchor": 3},
+
+        {"type": "textbox", "x": 58, "y": 370, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:flow-step}} — 三角形セパレーター"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 410, "width": 340, "height": 100, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.15], "text": "{{bold:Phase 1}}", "textAlign": "center", "verticalAnchor": 3},
+        {"type": "shape", "shape": "triangle", "x": 408, "y": 435, "width": 40, "height": 50, "fill": "#FF9900", "line": "none", "rotation": 90},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 458, "y": 410, "width": 340, "height": 100, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.15], "text": "{{bold:Phase 2}}", "textAlign": "center", "verticalAnchor": 3},
+        {"type": "shape", "shape": "triangle", "x": 808, "y": 435, "width": 40, "height": 50, "fill": "#FF9900", "line": "none", "rotation": 90},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 858, "y": 410, "width": 340, "height": 100, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.15], "text": "{{bold:Phase 3}}", "textAlign": "center", "verticalAnchor": 3},
+
+        {"type": "textbox", "x": 58, "y": 560, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:brace}} — 波括弧グルーピング"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 610, "width": 300, "height": 70, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.1]},
+        {"type": "textbox", "x": 58, "y": 633, "width": 300, "align": "center", "fontSize": 14, "marginTop": 0, "marginBottom": 0, "text": "{{bold:要素 A}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 700, "width": 300, "height": 70, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.1]},
+        {"type": "textbox", "x": 58, "y": 723, "width": 300, "align": "center", "fontSize": 14, "marginTop": 0, "marginBottom": 0, "text": "{{bold:要素 B}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 790, "width": 300, "height": 70, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.1]},
+        {"type": "textbox", "x": 58, "y": 813, "width": 300, "align": "center", "fontSize": 14, "marginTop": 0, "marginBottom": 0, "text": "{{bold:要素 C}}"},
+        {"type": "shape", "shape": "right_brace", "x": 380, "y": 610, "width": 40, "height": 250, "line": "#8FA7C4", "lineWidth": 1.5},
+        {"type": "textbox", "x": 440, "y": 710, "width": 300, "height": 40, "fontSize": 18, "verticalAnchor": 1, "text": "{{bold,#FF9900:結論}}"},
+
+        {"type": "textbox", "x": 960, "y": 560, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:brace}} — 角括弧バリエーション"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 960, "y": 610, "width": 300, "height": 70, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.1]},
+        {"type": "textbox", "x": 960, "y": 633, "width": 300, "align": "center", "fontSize": 14, "marginTop": 0, "marginBottom": 0, "text": "{{bold:項目 1}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 960, "y": 700, "width": 300, "height": 70, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.1]},
+        {"type": "textbox", "x": 960, "y": 723, "width": 300, "align": "center", "fontSize": 14, "marginTop": 0, "marginBottom": 0, "text": "{{bold:項目 2}}"},
+        {"type": "shape", "shape": "right_bracket", "x": 1280, "y": 610, "width": 30, "height": 160, "line": "#8FA7C4", "lineWidth": 1.5},
+        {"type": "textbox", "x": 1330, "y": 665, "width": 300, "height": 40, "fontSize": 18, "verticalAnchor": 1, "text": "{{bold,#FF9900:まとめ}}"}
+      ]
+    },
+    {
+      "layout": "content",
+      "title": "Indicators",
+      "elements": [
+        {"type": "textbox", "x": 58, "y": 180, "width": 500, "fontSize": 14, "text": "{{bold,#FF9900:number-marker}} — 番号付き円"},
+        {"type": "shape", "shape": "oval", "x": 54, "y": 218, "width": 56, "height": 56, "fill": "#FF9900", "line": "none", "text": "{{bold,#FFFFFF:1}}", "textAlign": "center", "verticalAnchor": 3, "fontSize": 24},
+        {"type": "textbox", "x": 124, "y": 234, "width": 300, "fontSize": 16, "marginTop": 0, "text": "{{bold:最初のステップ}}"},
+
+        {"type": "shape", "shape": "oval", "x": 54, "y": 288, "width": 56, "height": 56, "fill": "none", "line": "#FF9900", "lineWidth": 2, "text": "{{bold,#FF9900:2}}", "textAlign": "center", "verticalAnchor": 3, "fontSize": 24},
+        {"type": "textbox", "x": 124, "y": 304, "width": 200, "fontSize": 16, "marginTop": 0, "text": "{{bold:枠線のみ}}"},
+
+        {"type": "textbox", "x": 480, "y": 180, "width": 400, "fontSize": 14, "text": "{{bold,#FF9900:badge}} — ステータスバッジ"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 480, "y": 225, "width": 120, "height": 42, "adjustments": [0.5], "fill": "#AD5CFF", "line": "none"},
+        {"type": "textbox", "x": 480, "y": 225, "width": 120, "height": 42, "fontSize": 14, "align": "center", "text": "{{bold,#FFFFFF:Preview}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 620, "y": 225, "width": 80, "height": 42, "adjustments": [0.5], "fill": "#00E500", "line": "none"},
+        {"type": "textbox", "x": 620, "y": 225, "width": 80, "height": 42, "fontSize": 14, "align": "center", "text": "{{bold,#FFFFFF:GA}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 720, "y": 225, "width": 90, "height": 42, "adjustments": [0.5], "fill": "#FF9900", "line": "none"},
+        {"type": "textbox", "x": 720, "y": 225, "width": 90, "height": 42, "fontSize": 14, "align": "center", "text": "{{bold,#FFFFFF:New}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 480, "y": 285, "width": 120, "height": 42, "adjustments": [0.5], "fill": "none", "line": "#41B3FF", "lineWidth": 1.5},
+        {"type": "textbox", "x": 480, "y": 285, "width": 120, "height": 42, "fontSize": 14, "align": "center", "text": "{{bold,#41B3FF:Outline}}"},
+
+        {"type": "textbox", "x": 58, "y": 380, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:progress-bar}} — 進捗バー"},
+        {"type": "textbox", "x": 58, "y": 420, "width": 100, "fontSize": 12, "text": "{{#8FA7C4:70%}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 450, "width": 600, "height": 16, "fill": "#FFFFFF", "opacity": 0.15, "line": "none", "adjustments": [0.5]},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 450, "width": 420, "height": 16, "fill": "#FF9900", "line": "none", "adjustments": [0.5]},
+
+        {"type": "textbox", "x": 58, "y": 490, "width": 300, "fontSize": 12, "text": "{{#8FA7C4:45%（グラデーション）}}"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 520, "width": 600, "height": 16, "fill": "#FFFFFF", "opacity": 0.15, "line": "none", "adjustments": [0.5]},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 520, "width": 270, "height": 16, "gradient": {"angle": 0, "stops": [{"position": 0, "color": "#FF9900"}, {"position": 1, "color": "#FBD332"}]}, "line": "none", "adjustments": [0.5]},
+
+        {"type": "textbox", "x": 58, "y": 580, "width": 1800, "fontSize": 14, "text": "{{bold,#FF9900:spectrum-axis}} — 両端ラベル軸"},
+        {"type": "textbox", "x": 58, "y": 620, "width": 200, "height": 40, "align": "center", "fontSize": 14, "text": "{{bold,#0072E5:EASIER}}"},
+        {"type": "line", "x": 258, "y": 638, "width": 1404, "height": 0, "lineWidth": 1.5, "dashStyle": "dash", "lineGradient": {"angle": 0, "stops": [{"position": 0, "color": "#0072E5"}, {"position": 0.5, "color": "#C300E0"}, {"position": 1, "color": "#00E500"}]}, "headEnd": "arrow", "tailEnd": "arrow"},
+        {"type": "textbox", "x": 1662, "y": 620, "width": 200, "height": 40, "align": "center", "fontSize": 14, "text": "{{bold,#00E500:COMPLEX}}"}
+      ]
+    },
+    {
+      "layout": "content",
+      "title": "Text Styles & Decorations",
+      "elements": [
+        {"type": "textbox", "x": 58, "y": 180, "width": 800, "fontSize": 14, "text": "{{bold,#FF9900:text-gradient-title}} — グラデーションタイトル"},
+        {"type": "textbox", "x": 58, "y": 215, "width": 500, "height": 60, "fontSize": 36, "text": "{{bold:AWS Innovation}}", "textGradient": {"angle": 0, "stops": [{"position": 0, "color": "#FF9900"}, {"position": 1, "color": "#FBD332"}]}},
+        {"type": "textbox", "x": 600, "y": 215, "width": 600, "height": 60, "fontSize": 36, "text": "{{bold:Next Generation}}", "textGradient": {"angle": 0, "stops": [{"position": 0, "color": "#00E500"}, {"position": 1, "color": "#41B3FF"}]}},
+
+        {"type": "textbox", "x": 58, "y": 295, "width": 800, "fontSize": 14, "text": "{{bold,#FF9900:highlight-text-item}} — アクセントカラーテキスト"},
+        {"type": "textbox", "x": 58, "y": 325, "width": 600, "fontSize": 20, "text": "{{#FF9900:グローバル展開}}のインフラ"},
+        {"type": "textbox", "x": 700, "y": 325, "width": 600, "fontSize": 20, "text": "{{#41B3FF:99.99%}}の可用性を実現"},
+
+        {"type": "textbox", "x": 58, "y": 385, "width": 600, "fontSize": 14, "text": "{{bold,#FF9900:divider}} — 区切り線バリエーション"},
+        {"type": "textbox", "x": 58, "y": 420, "width": 200, "fontSize": 12, "text": "{{#8FA7C4:単色}}"},
+        {"type": "line", "x": 58, "y": 448, "width": 500, "height": 0, "lineWidth": 1, "color": "#8FA7C4"},
+        {"type": "textbox", "x": 600, "y": 420, "width": 200, "fontSize": 12, "text": "{{#8FA7C4:フェード}}"},
+        {"type": "line", "x": 600, "y": 448, "width": 500, "height": 0, "lineWidth": 1, "lineGradient": {"angle": 0, "stops": [{"position": 0, "color": "#FFFFFF", "opacity": 0}, {"position": 0.3, "color": "#FFFFFF", "opacity": 1}, {"position": 0.7, "color": "#FFFFFF", "opacity": 1}, {"position": 1, "color": "#FFFFFF", "opacity": 0}]}},
+        {"type": "textbox", "x": 1150, "y": 420, "width": 200, "fontSize": 12, "text": "{{#8FA7C4:破線}}"},
+        {"type": "line", "x": 1150, "y": 448, "width": 500, "height": 0, "lineWidth": 1, "color": "#8FA7C4", "dashStyle": "dash"},
+
+        {"type": "textbox", "x": 58, "y": 480, "width": 500, "fontSize": 14, "text": "{{bold,#FF9900:icon-circle}} — アイコン背景円"},
+        {"type": "shape", "shape": "oval", "x": 58, "y": 520, "width": 80, "height": 80, "fill": "#FF9900", "opacity": 0.15, "line": "none"},
+        {"type": "image", "src": "icons:Arch_AWS-Lambda_48", "x": 70, "y": 532, "width": 56, "labelPosition": "none"},
+        {"type": "textbox", "x": 28, "y": 608, "width": 140, "align": "center", "fontSize": 12, "text": "{{#8FA7C4:半透明}}"},
+
+        {"type": "shape", "shape": "oval", "x": 200, "y": 520, "width": 80, "height": 80, "fill": "none", "line": "#FF9900", "lineWidth": 2},
+        {"type": "image", "src": "icons:Arch_Amazon-Simple-Storage-Service_48", "x": 212, "y": 532, "width": 56, "labelPosition": "none"},
+        {"type": "textbox", "x": 170, "y": 608, "width": 140, "align": "center", "fontSize": 12, "text": "{{#8FA7C4:枠線のみ}}"},
+
+        {"type": "shape", "shape": "rounded_rectangle", "x": 342, "y": 520, "width": 80, "height": 80, "fill": "#AD5CFF", "opacity": 0.15, "line": "none", "adjustments": [0.25]},
+        {"type": "image", "src": "icons:Arch_Amazon-DynamoDB_48", "x": 354, "y": 532, "width": 56, "labelPosition": "none"},
+        {"type": "textbox", "x": 312, "y": 608, "width": 140, "align": "center", "fontSize": 12, "text": "{{#8FA7C4:角丸四角}}"},
+
+        {"type": "textbox", "x": 550, "y": 480, "width": 1300, "fontSize": 14, "text": "{{bold,#FF9900:dot-bullet-list}} — リッチ箇条書き"},
+        {"type": "line", "x": 600, "y": 520, "width": 0, "height": 200, "lineWidth": 2, "lineGradient": {"angle": 90, "stops": [{"position": 0, "color": "#41B3FF"}, {"position": 0.5, "color": "#AD5CFF"}, {"position": 1, "color": "#FF5C85"}]}},
+        {"type": "shape", "shape": "oval", "x": 590, "y": 530, "width": 20, "height": 20, "fill": "#FFFFFF", "line": "none"},
+        {"type": "textbox", "x": 630, "y": 525, "width": 400, "fontSize": 16, "text": "{{bold:スケーラブルな設計}}"},
+        {"type": "shape", "shape": "oval", "x": 590, "y": 600, "width": 20, "height": 20, "fill": "#FFFFFF", "line": "none"},
+        {"type": "textbox", "x": 630, "y": 595, "width": 400, "fontSize": 16, "text": "{{bold:高可用性の実現}}"},
+        {"type": "shape", "shape": "oval", "x": 590, "y": 670, "width": 20, "height": 20, "fill": "#FFFFFF", "line": "none"},
+        {"type": "textbox", "x": 630, "y": 665, "width": 400, "fontSize": 16, "text": "{{bold:コスト最適化}}"}
+      ]
+    },
+    {
+      "layout": "content",
+      "title": "Techniques",
+      "elements": [
+        {"type": "textbox", "x": 58, "y": 180, "width": 800, "fontSize": 14, "text": "{{bold,#FF9900:callout}} — 吹き出し注釈"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 230, "width": 300, "height": 120, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.1]},
+        {"type": "textbox", "x": 58, "y": 275, "width": 300, "align": "center", "fontSize": 16, "text": "{{bold:対象要素}}"},
+        {"type": "line", "x": 208, "y": 350, "width": 0, "height": 40, "color": "#FF9900", "lineWidth": 1, "dashStyle": "dash", "tailEnd": "arrow"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 108, "y": 390, "width": 250, "height": 70, "fill": "#FFFFFF", "opacity": 0.1, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.15]},
+        {"type": "textbox", "x": 118, "y": 400, "width": 230, "height": 50, "fontSize": 12, "verticalAnchor": 1, "marginLeft": 0, "marginRight": 0, "marginTop": 0, "marginBottom": 0, "text": "{{#8FA7C4:ここに補足説明を記載}}"},
+
+        {"type": "textbox", "x": 500, "y": 180, "width": 800, "fontSize": 14, "text": "{{bold,#FF9900:callout}} — 横向き接続"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 500, "y": 230, "width": 300, "height": 120, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.1]},
+        {"type": "textbox", "x": 500, "y": 275, "width": 300, "align": "center", "fontSize": 16, "text": "{{bold:対象要素}}"},
+        {"type": "line", "x": 800, "y": 290, "width": 60, "height": 0, "color": "#FF9900", "lineWidth": 1, "tailEnd": "arrow"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 860, "y": 250, "width": 250, "height": 80, "fill": "#FFFFFF", "opacity": 0.1, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.15]},
+        {"type": "textbox", "x": 870, "y": 260, "width": 230, "height": 60, "fontSize": 12, "verticalAnchor": 1, "marginLeft": 0, "marginRight": 0, "marginTop": 0, "marginBottom": 0, "text": "{{#8FA7C4:横向き注釈テキスト}}"},
+
+        {"type": "textbox", "x": 58, "y": 500, "width": 800, "fontSize": 14, "text": "{{bold,#FF9900:progressive-overlay}} — 段階的開示"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 545, "width": 250, "height": 80, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.1], "text": "{{bold:Step 1}}", "textAlign": "center"},
+        {"type": "line", "x": 308, "y": 583, "width": 60, "height": 0, "color": "#FF9900", "lineWidth": 1.5, "tailEnd": "arrow"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 368, "y": 545, "width": 250, "height": 80, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.1], "text": "{{bold:Step 2}}", "textAlign": "center"},
+        {"type": "line", "x": 618, "y": 583, "width": 60, "height": 0, "color": "#FF9900", "lineWidth": 1.5, "tailEnd": "arrow"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 678, "y": 545, "width": 250, "height": 80, "line": "#FF9900", "lineWidth": 1.5, "adjustments": [0.1], "text": "{{bold:Step 3}}", "textAlign": "center"},
+
+        {"type": "shape", "shape": "rectangle", "x": 48, "y": 535, "width": 890, "height": 100, "fill": "#000000", "opacity": 0.85, "line": "none"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 368, "y": 545, "width": 250, "height": 80, "line": "#FF9900", "lineWidth": 3, "adjustments": [0.1], "text": "{{bold,#FF9900:Step 2}}", "textAlign": "center"},
+        {"type": "textbox", "x": 58, "y": 640, "width": 870, "fontSize": 12, "text": "{{#8FA7C4:↑ オーバーレイ（opacity: 0.8）+ フォーカス要素の再描画。fill色はスライド背景色に合わせる}}"}
+      ]
+    },
+    {
+      "layout": "content",
+      "title": "Recipes（組み合わせ例）",
+      "elements": [
+        {"type": "textbox", "x": 58, "y": 180, "width": 500, "fontSize": 14, "text": "{{bold,#FF9900:kpi-card}} — 数値+ラベル"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 58, "y": 220, "width": 400, "height": 200, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.08]},
+        {"type": "textbox", "x": 58, "y": 255, "width": 400, "height": 80, "align": "center", "fontSize": 48, "text": "{{bold,#FF9900:99.99%}}"},
+        {"type": "textbox", "x": 58, "y": 335, "width": 400, "height": 50, "align": "center", "fontSize": 16, "text": "可用性 SLA"},
+
+        {"type": "shape", "shape": "rounded_rectangle", "x": 490, "y": 220, "width": 400, "height": 200, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.08]},
+        {"type": "textbox", "x": 490, "y": 255, "width": 400, "height": 80, "align": "center", "fontSize": 48, "text": "{{bold,#00E500:2.5x}}"},
+        {"type": "textbox", "x": 490, "y": 335, "width": 400, "height": 50, "align": "center", "fontSize": 16, "text": "パフォーマンス向上"},
+
+        {"type": "shape", "shape": "rounded_rectangle", "x": 922, "y": 220, "width": 400, "height": 200, "fill": "#FFFFFF", "opacity": 0.08, "line": "none", "adjustments": [0.08]},
+        {"type": "textbox", "x": 922, "y": 255, "width": 400, "height": 80, "align": "center", "fontSize": 48, "text": "{{bold,#D13212:30%}}"},
+        {"type": "textbox", "x": 922, "y": 335, "width": 400, "height": 50, "align": "center", "fontSize": 16, "text": "コスト削減"},
+
+        {"type": "textbox", "x": 58, "y": 460, "width": 900, "fontSize": 14, "text": "{{bold,#FF9900:icon-with-desc}} — アイコン+説明（icon-circle組み合わせ）"},
+        {"type": "shape", "shape": "oval", "x": 155, "y": 510, "width": 80, "height": 80, "fill": "#FF9900", "opacity": 0.15, "line": "none"},
+        {"type": "image", "src": "icons:Arch_AWS-Lambda_48", "x": 167, "y": 522, "width": 56, "labelPosition": "none"},
+        {"type": "textbox", "x": 58, "y": 592, "width": 274, "align": "center", "fontSize": 16, "text": "{{bold:AWS Lambda}}"},
+        {"type": "textbox", "x": 58, "y": 624, "width": 274, "align": "center", "fontSize": 12, "text": "{{#8FA7C4:サーバーレスで\nコード実行}}"},
+
+        {"type": "shape", "shape": "oval", "x": 429, "y": 510, "width": 80, "height": 80, "fill": "#41B3FF", "opacity": 0.15, "line": "none"},
+        {"type": "image", "src": "icons:Arch_Amazon-Simple-Storage-Service_48", "x": 441, "y": 522, "width": 56, "labelPosition": "none"},
+        {"type": "textbox", "x": 332, "y": 592, "width": 274, "align": "center", "fontSize": 16, "text": "{{bold:Amazon S3}}"},
+        {"type": "textbox", "x": 332, "y": 624, "width": 274, "align": "center", "fontSize": 12, "text": "{{#8FA7C4:スケーラブルな\nストレージ}}"},
+
+        {"type": "shape", "shape": "oval", "x": 703, "y": 510, "width": 80, "height": 80, "fill": "#AD5CFF", "opacity": 0.15, "line": "none"},
+        {"type": "image", "src": "icons:Arch_Amazon-DynamoDB_48", "x": 715, "y": 522, "width": 56, "labelPosition": "none"},
+        {"type": "textbox", "x": 606, "y": 592, "width": 274, "align": "center", "fontSize": 16, "text": "{{bold:DynamoDB}}"},
+        {"type": "textbox", "x": 606, "y": 624, "width": 274, "align": "center", "fontSize": 12, "text": "{{#8FA7C4:フルマネージド\nNoSQLデータベース}}"},
+
+        {"type": "textbox", "x": 960, "y": 460, "width": 500, "fontSize": 14, "text": "{{bold,#FF9900:quote-block}} — 引用ブロック"},
+        {"type": "shape", "shape": "rounded_rectangle", "x": 960, "y": 500, "width": 900, "height": 200, "fill": "#1A1A1A", "line": "none", "adjustments": [0.03]},
+        {"type": "textbox", "x": 960, "y": 510, "width": 60, "fontSize": 48, "text": "{{#AB0071:\"}}"},
+        {"type": "textbox", "x": 1020, "y": 550, "width": 800, "fontSize": 14, "paragraphs": [
+          {"text": "{{italic:\"クラウド移行により、}}{{italic,#41B3FF:運用コストを30%削減}}{{italic:しながら可用性を大幅に向上できました。\"}}"},
+          {"text": "{{italic:– 技術部長、}}クラウド推進室"}
+        ]}
+      ]
+    }
+  ]
+}

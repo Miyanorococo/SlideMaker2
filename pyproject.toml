@@ -1,0 +1,10 @@
+[project]
+name = "pptx-maker"
+version = "1.0.0"
+description = "Generate PowerPoint presentations from JSON using corporate templates"
+requires-python = ">=3.10"
+dependencies = [
+    "python-pptx",
+    "lxml",
+    "Pillow",
+]

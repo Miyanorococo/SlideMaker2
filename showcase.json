@@ -1,0 +1,660 @@
+{
+  "theme": "dark",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "PPTX Maker",
+      "subtitle": "AIエージェントによるプレゼンテーション自動生成",
+      "presenter": "Powered by JSON",
+      "date": "2026"
+    },
+    {
+      "layout": "section",
+      "title": "主な機能"
+    },
+    {
+      "layout": "title_only",
+      "title": "PPTX Maker の特徴",
+      "elements": [
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 58,
+          "y": 194,
+          "width": 422,
+          "height": 594,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:json_scripts_dark",
+          "x": 192,
+          "y": 238,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 58,
+          "y": 389,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#FF9900:JSON入力}}"
+        },
+        {
+          "type": "textbox",
+          "x": 77,
+          "y": 486,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "シンプルなJSON形式で\nスライドを定義\n\nエージェントが\n直接生成可能"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 518,
+          "y": 194,
+          "width": 422,
+          "height": 594,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_AWS-Lambda_48",
+          "x": 653,
+          "y": 238,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 518,
+          "y": 389,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#AD5CFF:1100+ アイコン}}"
+        },
+        {
+          "type": "textbox",
+          "x": 538,
+          "y": 486,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "AWSサービス\nリソース\nサードパーティ\n\nmanifest.jsonで\n高速検索"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 979,
+          "y": 194,
+          "width": 422,
+          "height": 594,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch-Category_Developer-Tools_48",
+          "x": 1114,
+          "y": 238,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 979,
+          "y": 389,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#00E500:スタイル付きテキスト}}"
+        },
+        {
+          "type": "textbox",
+          "x": 998,
+          "y": 486,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "太字・色・サイズ\nリンク\nグラデーション\n\nインライン記法で\n柔軟に表現"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 1440,
+          "y": 194,
+          "width": 422,
+          "height": 594,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.06
+          ]
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch-Category_Management-Governance_48",
+          "x": 1574,
+          "y": 238,
+          "width": 154,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 1440,
+          "y": 389,
+          "width": 422,
+          "align": "center",
+          "fontSize": 18,
+          "text": "{{bold,#41B3FF:テーマ対応}}"
+        },
+        {
+          "type": "textbox",
+          "x": 1459,
+          "y": 486,
+          "width": 384,
+          "align": "center",
+          "fontSize": 13,
+          "text": "Light / Dark\n社内テンプレート準拠\n\nブランドガイドライン\n自動適用"
+        },
+        {
+          "type": "textbox",
+          "x": 58,
+          "y": 842,
+          "width": 1805,
+          "align": "center",
+          "fontSize": 14,
+          "text": "{{#8FA7C4:JSON → PPTX の変換で、一貫性のある高品質なプレゼンテーションを自動生成}}"
+        }
+      ]
+    },
+    {
+      "layout": "title_only",
+      "title": "スタイル付きテキストの表現力",
+      "elements": [
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 238,
+          "width": 1728,
+          "fontSize": 24,
+          "text": "{{bold:太字}}、{{italic:斜体}}、{{#FF9900:カラー}}、{{18pt:サイズ変更}}"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 378,
+          "width": 1728,
+          "fontSize": 24,
+          "text": "{{bold,#AD5CFF,24pt:複合スタイル}}も自由自在"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 518,
+          "width": 1728,
+          "fontSize": 24,
+          "text": "{{link:https://aws.amazon.com:クリック可能なリンク}}"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 659,
+          "width": 960,
+          "fontSize": 36,
+          "text": "{{bold:グラデーション}}",
+          "textGradient": {
+            "angle": 0,
+            "stops": [
+              {
+                "position": 0,
+                "color": "#FF9900"
+              },
+              {
+                "position": 1,
+                "color": "#FF5C85"
+              }
+            ]
+          }
+        },
+        {
+          "type": "textbox",
+          "x": 1056,
+          "y": 659,
+          "width": 768,
+          "fontSize": 36,
+          "text": "{{bold:テキスト}}",
+          "textGradient": {
+            "angle": 0,
+            "stops": [
+              {
+                "position": 0,
+                "color": "#41B3FF"
+              },
+              {
+                "position": 1,
+                "color": "#AD5CFF"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "layout": "title_only",
+      "title": "図形とコネクタ",
+      "elements": [
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "x": 96,
+          "y": 238,
+          "width": 230,
+          "height": 130,
+          "fill": "#FF9900",
+          "line": "none",
+          "text": "矩形"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 384,
+          "y": 238,
+          "width": 230,
+          "height": 130,
+          "fill": "#AD5CFF",
+          "line": "none",
+          "adjustments": [
+            0.2
+          ],
+          "text": "角丸"
+        },
+        {
+          "type": "shape",
+          "shape": "oval",
+          "x": 672,
+          "y": 238,
+          "width": 230,
+          "height": 130,
+          "fill": "#41B3FF",
+          "line": "none",
+          "text": "楕円"
+        },
+        {
+          "type": "shape",
+          "shape": "diamond",
+          "x": 960,
+          "y": 238,
+          "width": 230,
+          "height": 130,
+          "fill": "#00E500",
+          "line": "none"
+        },
+        {
+          "type": "shape",
+          "shape": "hexagon",
+          "x": 1248,
+          "y": 238,
+          "width": 230,
+          "height": 130,
+          "fill": "#FF5C85",
+          "line": "none"
+        },
+        {
+          "type": "shape",
+          "shape": "arrow_right",
+          "x": 1536,
+          "y": 238,
+          "width": 288,
+          "height": 130,
+          "fill": "#FBD332",
+          "line": "none"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 154,
+          "y": 540,
+          "width": 346,
+          "height": 162,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.15
+          ],
+          "text": "{{#FFFFFF:ソース}}"
+        },
+        {
+          "type": "line",
+          "x": 518,
+          "y": 616,
+          "width": 346,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 883,
+          "y": 540,
+          "width": 346,
+          "height": 162,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.15
+          ],
+          "text": "{{#FFFFFF:処理}}"
+        },
+        {
+          "type": "line",
+          "x": 1248,
+          "y": 616,
+          "width": 346,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 1421,
+          "y": 540,
+          "width": 346,
+          "height": 162,
+          "fill": "#37475A",
+          "line": "none",
+          "adjustments": [
+            0.15
+          ],
+          "text": "{{#FFFFFF:出力}}"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 810,
+          "width": 1728,
+          "align": "center",
+          "fontSize": 14,
+          "text": "{{#8FA7C4:straight / elbow / curved コネクタ、矢印スタイル、グラデーション線}}"
+        }
+      ]
+    },
+    {
+      "layout": "title_only",
+      "title": "アーキテクチャ図の例",
+      "elements": [
+        {
+          "type": "image",
+          "src": "icons:users_dark",
+          "x": 96,
+          "y": 378,
+          "width": 115,
+          "label": "ユーザー",
+          "labelPosition": "bottom"
+        },
+        {
+          "type": "line",
+          "x": 230,
+          "y": 432,
+          "width": 154,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-CloudFront_48",
+          "x": 403,
+          "y": 378,
+          "width": 115,
+          "label": "CloudFront",
+          "labelPosition": "bottom"
+        },
+        {
+          "type": "line",
+          "x": 538,
+          "y": 432,
+          "width": 154,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-API-Gateway_48",
+          "x": 710,
+          "y": 378,
+          "width": 115,
+          "label": "API Gateway",
+          "labelPosition": "bottom"
+        },
+        {
+          "type": "line",
+          "x": 845,
+          "y": 432,
+          "width": 154,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_AWS-Lambda_48",
+          "x": 1018,
+          "y": 378,
+          "width": 115,
+          "label": "Lambda",
+          "labelPosition": "bottom"
+        },
+        {
+          "type": "line",
+          "x": 1152,
+          "y": 432,
+          "width": 154,
+          "height": 0,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-DynamoDB_48",
+          "x": 1325,
+          "y": 378,
+          "width": 115,
+          "label": "DynamoDB",
+          "labelPosition": "bottom"
+        },
+        {
+          "type": "line",
+          "x": 1075,
+          "y": 518,
+          "width": 0,
+          "height": 130,
+          "tailEnd": "arrow"
+        },
+        {
+          "type": "image",
+          "src": "icons:Arch_Amazon-Bedrock_48",
+          "x": 1018,
+          "y": 670,
+          "width": 115,
+          "label": "Bedrock",
+          "labelPosition": "bottom"
+        },
+        {
+          "type": "shape",
+          "shape": "rounded_rectangle",
+          "x": 58,
+          "y": 302,
+          "width": 1440,
+          "height": 594,
+          "fill": "none",
+          "line": "#8FA7C4",
+          "lineWidth": 1,
+          "adjustments": [
+            0.03
+          ]
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 313,
+          "width": 384,
+          "fontSize": 12,
+          "text": "{{#8FA7C4:AWS Cloud}}"
+        }
+      ]
+    },
+    {
+      "layout": "title_only",
+      "title": "プレースホルダ機能",
+      "elements": [
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 238,
+          "width": 1728,
+          "fontSize": 16,
+          "text": "エージェントが生成できない要素（画像・動画・スクリーンショット）は、プレースホルダで配置"
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "x": 96,
+          "y": 378,
+          "width": 768,
+          "height": 378,
+          "fill": "#F0F0F0",
+          "line": "#CCCCCC",
+          "text": "{{#888888:<ここにデモ画面の\nスクリーンショットを挿入>}}"
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "x": 960,
+          "y": 378,
+          "width": 864,
+          "height": 378,
+          "fill": "#F0F0F0",
+          "line": "#CCCCCC",
+          "text": "{{#888888:<ここにアーキテクチャ図を挿入>}}"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 810,
+          "width": 1728,
+          "align": "center",
+          "fontSize": 14,
+          "text": "{{#8FA7C4:ユーザーは矩形を選択 → 画像で置換するだけ}}"
+        }
+      ]
+    },
+    {
+      "layout": "content",
+      "title": "",
+      "elements": [
+        {
+          "type": "image",
+          "src": "icons:Kiro",
+          "x": 154,
+          "y": 302,
+          "width": 230,
+          "labelPosition": "none"
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 540,
+          "width": 768,
+          "fontSize": 42,
+          "text": "{{bold:PPTX Maker}}",
+          "textGradient": {
+            "angle": 0,
+            "stops": [
+              {
+                "position": 0,
+                "color": "#FF9900"
+              },
+              {
+                "position": 1,
+                "color": "#AD5CFF"
+              }
+            ]
+          }
+        },
+        {
+          "type": "textbox",
+          "x": 96,
+          "y": 702,
+          "width": 768,
+          "fontSize": 16,
+          "text": "AIエージェントと人間の\nコラボレーションで\n高品質なプレゼンを実現"
+        },
+        {
+          "type": "line",
+          "x": 960,
+          "y": 270,
+          "width": 0,
+          "height": 594,
+          "color": "#FFFFFF",
+          "lineWidth": 1.5
+        },
+        {
+          "type": "textbox",
+          "x": 1056,
+          "y": 270,
+          "width": 806,
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} JSON入力でシンプルに定義"
+        },
+        {
+          "type": "textbox",
+          "x": 1056,
+          "y": 389,
+          "width": 806,
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} 1100+ AWSアイコン内蔵"
+        },
+        {
+          "type": "textbox",
+          "x": 1056,
+          "y": 508,
+          "width": 806,
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} スタイル付きテキスト"
+        },
+        {
+          "type": "textbox",
+          "x": 1056,
+          "y": 626,
+          "width": 806,
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} 図形・コネクタ・グラデーション"
+        },
+        {
+          "type": "textbox",
+          "x": 1056,
+          "y": 745,
+          "width": 806,
+          "fontSize": 18,
+          "text": "{{#FF9900:✓}} Light/Dark テーマ対応"
+        }
+      ]
+    },
+    {
+      "layout": "thankyou"
+    }
+  ]
+}

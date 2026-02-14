@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# macOS
+.DS_Store
+
+# Output
+*.pptx
+!template_*.pptx
+
+# Downloaded icons (use scripts/download_icons.py)
+/icons/
+
+# IDE
+.idea/
+.vscode/
