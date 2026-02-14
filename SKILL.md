@@ -94,15 +94,6 @@ uv run python3 scripts/pptx_builder.py generate {output_json} -o {output_pptx}
 - You MUST fix readability warnings before proceeding to Phase 4
 - You MUST NOT reduce fontSize below design-rules.md minimums to fix warnings — shorten text instead
 
-### Phase 2.5: textbox height 指定ルール（必須）
-
-エージェントのpromptに以下を**必ず含める**:
-
-- textbox には必ず height を指定すること。height なしの textbox は自動拡張して下の要素と重なる
-- 1行: fontSize×3.5、複数行: 行数×fontSize×2.7、箇条書き: 項目数×fontSize×3.0 を目安に指定
-- height 省略はスライド最下部の要素で下に他の要素がない場合のみ許可
-- 関連するテキスト（タイトル+説明、価格+単位など）は1つの textbox にまとめ、\n で改行する
-
 ### Phase 4: デザインレビュー
 
 完成PPTXのプレビューPNGを確認し、デザイン品質をレビューする。
